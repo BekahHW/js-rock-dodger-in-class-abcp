@@ -76,6 +76,7 @@ function endGame() {
 
 function moveDodger(e) {
   const code = e.which
+  
   if (LEFT_ARROW){
     moveDodgerLeft()
   }
@@ -85,11 +86,11 @@ function moveDodger(e) {
   
   window.requestAnimationFrame()
 
-
+}
 
 function moveDodgerLeft() {
   el.style.top=`${top +=2}px`
- 
+}
 
 function moveDodgerRight() {
  
