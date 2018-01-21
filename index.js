@@ -105,13 +105,14 @@ function moveDodgerLeft() {
 }
 
 function moveDodgerRight() {
+  window.requestAnimationFrame(){
      const left = positionToInteger(DODGER.style.left)
-   window.requestAnimationFrame()
+   
   
   if (left<360)
   {
- DODGER.style.top=`${top +4}px`}
- 
+ DODGER.style.top=`${top +4}px`;}
+  })
   
 }
 
