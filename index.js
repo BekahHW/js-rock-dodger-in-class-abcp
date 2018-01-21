@@ -91,11 +91,13 @@ function moveDodger(e) {
 function moveDodgerLeft() {
   if (code>0){
   el.style.top=`${top +=2}px`}
+    window.requestAnimationFrame()
 }
 
 function moveDodgerRight() {
   if (code<360){
  el.style.top=`${top +=2}px`}
+   window.requestAnimationFrame()
 }
 }
 function positionToInteger(p) {
