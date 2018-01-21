@@ -93,13 +93,13 @@ function moveDodger(e) {
 
 function moveDodgerLeft() {
   if (left>0){
-  DODGER.style.top=`${top -=2}px`}
+  DODGER.style.top=`${top -4}px`}
     window.requestAnimationFrame()
 }
 
 function moveDodgerRight() {
   if (left<360){
- DODGER.style.top=`${top +=2}px`}
+ DODGER.style.top=`${top +4}px`}
  
    window.requestAnimationFrame()
 }
