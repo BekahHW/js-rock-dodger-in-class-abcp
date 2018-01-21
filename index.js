@@ -76,7 +76,12 @@ function endGame() {
 
 function moveDodger(e) {
   const code = e.which
-  if (LEFT_ARROW)
+  if (LEFT_ARROW){
+    moveDodgerLeft()
+  }
+  else(RIGHT_ARROW){
+    moveDodgerRight()
+  }
   
   window.requestAnimationFrame()
 
