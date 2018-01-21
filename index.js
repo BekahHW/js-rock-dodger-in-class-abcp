@@ -92,16 +92,19 @@ function moveDodger(e) {
 }
 
 function moveDodgerLeft() {
+   const left = positionToInteger(DODGER.style.left)
+    window.requestAnimationFrame()
   if (left>0){
   DODGER.style.top=`${top -4}px`}
-    window.requestAnimationFrame()
+   
 }
 
 function moveDodgerRight() {
+   window.requestAnimationFrame()
   if (left<360){
  DODGER.style.top=`${top +4}px`}
  
-   window.requestAnimationFrame()
+  
 }
 
 
