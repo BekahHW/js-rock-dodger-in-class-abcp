@@ -75,10 +75,13 @@ function endGame() {
 }
 
 function moveDodger(e) {
-  e.preventDefault();
-  e.stopPropagation();
+ 
   
   const code = e.which
+   if ([LEFT_ARROW, RIGHT_ARROW].indexOf(code) > -1) {
+    e.preventDefault()
+    e.stopPropagation()
+  }
   
   if (code === LEFT_ARROW){
     moveDodgerLeft()
