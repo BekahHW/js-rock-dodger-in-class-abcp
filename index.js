@@ -101,7 +101,6 @@ function moveDodgerLeft() {
 
 function moveDodgerRight() {
      const left = positionToInteger(DODGER.style.left)
-
    window.requestAnimationFrame()
   if (left<360){
  DODGER.style.top=`${top +4}px`}
