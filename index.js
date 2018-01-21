@@ -77,10 +77,10 @@ function endGame() {
 function moveDodger(e) {
   const code = e.which
   
-  if (LEFT_ARROW){
+  if (code === LEFT_ARROW){
     moveDodgerLeft()
   }
-  else(RIGHT_ARROW){
+  else(code===RIGHT_ARROW){
     moveDodgerRight()
   }
   
@@ -89,11 +89,13 @@ function moveDodger(e) {
 
 
 function moveDodgerLeft() {
-  el.style.top=`${top +=2}px`
+  if (code>0){
+  el.style.top=`${top +=2}px`}
 }
 
 function moveDodgerRight() {
- 
+  if (code<360){
+ el.style.top=`${top +=2}px`}
 }
 }
 function positionToInteger(p) {
