@@ -83,7 +83,7 @@ function moveDodger(e) {
   if (code === LEFT_ARROW){
     moveDodgerLeft()
   }
-  else(code===RIGHT_ARROW){
+  else if(code===RIGHT_ARROW){
     moveDodgerRight()
   }
   
@@ -93,13 +93,13 @@ function moveDodger(e) {
 
 function moveDodgerLeft() {
   if (left>0){
-  el.style.top=`${top +=2}px`}
+  DODGER.style.top=`${top -=2}px`}
     window.requestAnimationFrame()
 }
 
 function moveDodgerRight() {
   if (left<360){
- el.style.top=`${top +=2}px`}
+ DODGER.style.top=`${top +=2}px`}
  
    window.requestAnimationFrame()
 }
