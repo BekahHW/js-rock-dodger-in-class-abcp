@@ -86,7 +86,7 @@ function moveDodger(e) {
   
   window.requestAnimationFrame()
 
-
+}
 
 function moveDodgerLeft() {
   if (top>0){
@@ -97,9 +97,12 @@ function moveDodgerLeft() {
 function moveDodgerRight() {
   if (top<360){
  el.style.top=`${top +=2}px`}
+ 
    window.requestAnimationFrame()
 }
+
 }
+
 function positionToInteger(p) {
   return parseInt(p.split('px')[0]) || 0
 }
